@@ -1,0 +1,737 @@
+*{
+margin:  0;
+padding: 0;
+font-family: 'poppins'sans-serif;
+box-sizing: border-box;
+}
+
+.baner{
+    background-color: rgb(235, 28, 207);
+    width: 100%;
+    HEIGHT: 50PX;
+}
+
+#containerfotoyc{
+    margin: 03%;
+}
+.menuhorizontal{
+    margin-top: 40px;
+    background-color: rgb(5, 2, 4);
+    color:white;
+    width: 100%;
+    HEIGHT: 50PX;
+    text-align: center;
+    align-items: center;      
+}
+.menuhorizontalitemhome{
+    color: white;
+    margin-right: 30px;
+}
+.menuhorizontalitemtienda{
+    color: white;
+    margin-right: 30px;
+}
+.menuhorizontalitempersonalizadosv{
+    color: white;
+    margin-right: 30px;
+}
+.menuhorizontalitemmascotas{
+    color: white;
+    margin-right: 30px;
+}
+.menuhorizontalitemcontacto{
+    color: white;
+    margin-right: 30px;
+}
+
+#logoempresa{
+    width: 68px;
+    height: 48px;
+    float:left;
+}
+#carritodecompras{
+    width: 50px;
+    height: 48px;
+    float:left;
+}
+#ubicacion{
+    width: 68px;
+    height: 48px;
+    float: right;
+}
+#youtube{
+    width: 68px;
+    height: 48px;
+    float: right;
+}
+#instagram{
+    width: 68px;
+    height: 48px;
+    float: right;
+}
+#facebook{
+    width: 68px;
+    height: 48px;
+    float: right;
+}
+
+.buscar{
+    margin: 40px;
+    float: right;
+    padding: 5px;
+
+}
+.buscar input{
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition:all 0.6s ease;
+}
+.btn{
+    float: right;
+    top: 0;
+    right: 0;
+    background: #ee60d9;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #f3e8f2;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.buscar:hover input{
+    width: 240px;
+}
+
+.buscar input :focus{
+    width: 240px;
+}
+
+#menuhorizontalitem{
+    color: white;
+    margin-left: 20px;   
+}
+.seccion1{
+    width: 30%;
+    height: 300px;
+}
+#img1seccion1{
+width: 45%;
+margin-top: 15%;
+transform: rotate(-15deg);
+}
+#img2seccion1{
+width: 47%;
+transform: rotate(15deg);
+}
+.seccion2{
+    float: right;
+    align-items: start;
+}
+
+.seccion3{
+    width: 100%;
+    margin-top: 15px;
+    color: rgb(226, 43, 165);
+    margin-top: 07%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Metologia BEM*/
+.contenedorbem{
+    justify-content: center;
+    width: 15000%;
+    margin:100px;
+    gap: 50px;
+    
+}
+.tarjeta{
+    text-align: center;
+    width: 1200px;
+    border:5px double #7fc4fc;
+    border-radius: 10px;
+    padding: 10px;
+}
+.tarjeta_imageninicio{
+    text-align: center;
+    width: 130px;
+    
+}
+.tarjeta_imagengatitacafe{
+    width: 130px;
+    height: 160px; 
+}
+.tarjeta_imagenmorita{
+    width: 130px;
+    height: 160px;
+    
+}
+.tarjeta_imagenfamily{
+    width: 130px;
+    height: 160px;
+}
+.tarjeta_imagensala{
+    width: 130px;
+    height: 160px;
+}
+
+
+.tarjeta_texto{
+    font-size: 'Roboto',sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:#1d1b1d
+
+}
+/*flexbox*/
+.flex-container{
+    /* activamos flex*/
+    display: flex;
+    /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
+    flex-direction: row-reverse;
+    /*dispone los elementos flexibles en eje principal*/
+    justify-content: space-between;
+    align-items: center;
+    
+
+    border: 3px solid #7fc4fc;
+    background-color: #edf4fa;
+    padding: 149px;
+    margin: 5px;
+
+}
+.caja{
+    /* box modeling*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 5px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#arbolmulti{
+    width: 200px;
+    height: 200px;
+}
+#flores{
+    width: 200px;
+    height: 200px;
+}
+#sala{
+    width: 200px;
+    height: 200px;
+}
+#persoalizado{
+    width: 200px;
+    height: 200px;
+}
+#perrito{
+    width: 200px;
+    height: 200px;
+}
+#btnwha{  
+    display: inline-block; 
+    margin: 30px;
+    width: 40px;
+    font-size: 18x;
+    padding: 10px 15px;
+    border-radius: 60%;  
+}
+
+#what{   
+    width: 70px;
+    HEIGHT: 70PX;
+}
+.cuadroideal{
+    text-align: center;
+    color:   rgb(14, 13, 13);
+}
+#tituloideal{
+    margin: 15px;
+    text-align: center;
+    color:     rgb(235, 28, 207)
+
+}
+.footer{
+    text-align: center;
+    border: 3px solid #0f0f0f;
+    color:rgb(252, 249, 249);
+    width: 100%;
+    justify-content: center;
+}
+
+.footerdi{
+    margin-top: 08%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    HEIGHT: 100%;
+}
+/*-------------Tienda--------------------*/
+.iniciotienda{
+    text-align: center;
+    margin: 02%;
+}
+#inicio{
+    text-align: center;
+    margin-top: 130;
+    color:     rgb(19, 18, 19);
+    padding: 10px;
+}
+#tiendabjbaner{
+    text-align: center;
+    margin-top: 1300px;
+    color:     rgb(19, 18, 19);
+    padding: 10px;
+}
+#titulodetienda{
+    margin: 01%;
+    color: #e928cf;
+    text-align: center;
+}
+
+#tituloideal{
+    margin-top: 90px;
+    text-align: center;
+    color: rgb(19, 18, 19);
+    justify-content: center;
+}
+#tituloideal{
+    margin-top: 05%;
+    text-align: center;
+    color: #e928cf;
+}
+.listadesple{
+    margin-top: 40px;
+    width: 32%;
+    height: 30%;
+    align-items: center;
+}
+
+.flex-container2{
+    /* activamos flex*/
+display: flex;
+flex-direction: row-reverse;
+justify-content:end;
+margin: 45px;
+border-left: #285be9;
+}
+.cajacaj1{
+    /* box modeling*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.cajacaj2{
+    /* box modeling*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cajacj3{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.cajacj4 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.cajacj5{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#botondecomprarahora{
+    background-color: rgb(22, 216, 216);
+    border-radius: 30px;
+    width: 70%;
+    height: 15%;
+    text-align: center, ;
+    margin: 05%;;
+}
+
+.flex-container3{
+    /* activamos flex*/
+display: flex;
+flex-direction: row-reverse;
+justify-content:end;
+margin: 200px;
+border-left: #285be9;
+}
+.cj1C{
+    /* box modeling*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.cj2C{
+    /* box modeling*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cj3C{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 05px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.cj4C{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 05px;
+
+    /* tipografia*/
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.conttarjetas{
+    /*box-modeling*/
+    padding: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:end;
+    margin: 100px;
+    border-left: #285be9;
+}
+.imgtarjetas{
+    width: 600px;
+    height: 200px;
+    justify-items: center;
+}
+/*cuadros personalizados*/
+.containermenuhorizontalpersonalizados{
+    text-align: center;
+    background-color: #000;
+    height: 50px;
+}
+.d-item{
+    height:800px;
+}
+.d-img{
+    height: 100%;
+    filter: brightness(0.6);
+}
+.d2-item{
+    height:800px;
+}
+.d2-img{
+height: 100%;
+filter: brightness(0.6);
+}
+.d3-item{
+    height:800px;
+}
+.d3-img{
+    height: 100%;
+    filter: brightness(0.6);
+}
+.d4-item{
+    height:800px;
+}
+.d4-img{
+    height: 100%;
+    filter: brightness(0.6);
+}
+.d5-item{
+    height:800px;
+}
+.d5-img{
+    height: 100%;
+    filter: brightness(0.6);
+}
+
+.container-footer{
+    height: 150px;
+    text-align: center;
+    
+}
+.footericen{
+    margin: 15px;
+    text-align: center;
+    color:     rgb(243, 237, 242)
+
+}
+
+    
+
+/*cuadros mascotas */
+.grid-containermascota{
+/*Box modeling*/
+justify-content: center;
+width:40%;
+margin: auto;
+
+
+
+/*activamos grid*/
+display:grid;
+
+
+/*definimos la cantidad de columnas y el ancho de las mismas*/
+grid-template-columns: repeat(3,1fr);
+/*definimos  la canidad de filas y el alto de las mismas*/
+column-gap: 5px;
+row-gap: 5px;
+}
+
+.grid-containermascota > div{
+    /*box-modeling*/
+    display: block;
+    border: 1px solid #000;
+    padding: 20px; 
+    background-color: #ecf0f3;
+    
+}
+.imgcperrito{
+    width:330px;
+    height:300px;  
+}
+.titulosimp{
+    font-family: 20px;
+    color: #285be9;
+}
+#botongridcompra{
+    background-color: rgb(22, 216, 216);
+    border-radius: 30px;
+    width: 70%;
+    height: 12%;
+    text-align: center, ;
+    margin: 05%;;
+}
+
+.imgcluna{
+    width:330px;
+    height:300px;  
+}
+.titulosmadera{
+    font-family: 20px;
+    color: #285be9;
+}
+.imgccaballo{
+    width:330px;
+    height:300px;  
+}
+.titulosimgcaballo{
+    font-family: 20px;
+    color: #285be9;
+}
+.imgcperritodimen{
+    width:300px;
+    height:270px;  
+}
+.titulosperritodimen{
+    font-family: 20px;
+    color: #285be9;
+}
+.imgctigre{
+    width:300px;
+    height:270px;  
+}
+.titulostigre{
+    font-family: 20px;
+    color: #285be9;
+}
+.imgckoala{
+    width:300px;
+    height:270px;  
+}
+.tituloskoala{
+    font-family: 20px;
+    color: #285be9; 
+}
+.videopag{
+margin-top: 100px;
+text-align: center;
+}   
+
+
+/* contacto */
+.tituloContactenos{
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(150, 44, 131);
+    width: 100%;
+    HEIGHT: 50PX;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+
+.DivformularioContactenos{
+    display: flex;
+}
+
+.divMapa{
+    width: 70%;
+    float: left;
+    
+}
+.contenedorContactenos {
+    background-color: #94c9dc;
+    width: 30%;
+    height: 450px;
+}
+.formularioContatenos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    
+}
+
+label {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.imagenmapa{
+    margin-left: 20px;
+    height: 500px;
+
+}
+
+.botonContacto{
+    background-color: #e928cf;
+    color: white; 
+}
+
+.titulo-cuadrospersonalizados{
+
+    text-align: center;
+    color: #e928cf;
+    font-family:'robot', sans-serif;
+}
+
+/*pseudoclases */
+a:hover{
+    font-size: 20px;
+    color: #e928cf;
+}
+a:active{
+    background-color: rgb(251, 255, 255);
+    color: #e928cf;
+    padding: 10px;
+}
+a:link{
+    color: rgb(221, 235, 101);
+}
+a:visited{
+    color: aqua;
+}
+
+/*Mdia quueris */
+/*cuando elusuario visiste esta pantalla muestrale el anco de la pantalla de la siguiente forma*/
+@media screen and (max-width: 480px){
+    .titulo-cuadrospersonalizados{
+        text-align: center;
+        color: #e928cf;
+        font-size: 18px;
+        border: 2px solid #000;
+        
+    }
+}
+@media screen and (min-width: 786px) and (max-width: 992px){
+    .titulo-cuadrospersonalizados{
+        text-align: center;
+        color: #e928cf;
+        font-size: 18px;
+        border: 2px solid #000;
+        margin-top: 20px;
+        
+    }
+}
