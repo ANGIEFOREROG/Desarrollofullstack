@@ -9,6 +9,8 @@ box-sizing: border-box;
     background-color: rgb(235, 28, 207);
     width: 100%;
     HEIGHT: 50PX;
+    position: sticky;
+    top:0;
 }
 
 #containerfotoyc{
