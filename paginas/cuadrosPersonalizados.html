@@ -19,57 +19,57 @@
 </head>
 
 <body>
-    <div class="container-fluid" style="background-color:rgba(255, 0, 221, 0.897);">
-        <div class="row">
-            <div class="col">
-                <img id ="logoempresa fluid" style="width: 50px; height: 50px;" src="../assets/iconos/iconoempresa.jpg" alt="logoempresa">
-                <img id="carritodecompras fluid" style="width: 50px; height: 50px;" src="../assets/iconos/carritocompras.png" alt="carritodecompras">
-                <a href="https://www.google.com/maps/place/20+de+julio/@4.7101498,-74.1221,17z/data=!4m14!1m7!3m6!1s0x8e3f85c7a22d11bf:0xf375c538aba79343!2s20+de+julio!8m2!3d4.7101445!4d-74.1195251!16s%2Fg%2F11s8wf78dt!3m5!1s0x8e3f85c7a22d11bf:0xf375c538aba79343!8m2!3d4.7101445!4d-74.1195251!16s%2Fg%2F11s8wf78dt?hl=es&entry=ttu"class="ubicacion">
-                    <img id="ubicacion" src="../assets/iconos/ubicacion.png" alt="ubicacion"> 
-                    <a href="https://youtube.com/shorts/z0e4pf9MybI?feature=share" class="youtube">
-                        <img id="youtube" src="../assets/iconos/youtube.png" alt="youtube">
-                        <a href="https://instagram.com/lapaez.art?igshid=MzRlODBiNWFlZA==" class="instagram">
-                            <img id="instagram" src="../assets/iconos/instagram.png" alt="instagram">
-                            <a href="https://www.facebook.com/profile.php?id=100090191966978" class="facebook">
-                                <img id="facebook" src="../assets/iconos/facebook.png" alt="facebook"> </a>
-                
-            </div>
-
-        </div>
-    </div>
-
-   <div class="buscar">
-        <input type="text" placeholder="buscar" required>
-        <div class="btn">
-            <i class="fas fa-search icon"></i>
-        </div>
-    </div> 
-    
-    
-    
-    <header>
-        <div id="containerfotoyc">
-            <P class="logo">FOTOS & CUADROS </P>
-        </div>
-        <div class="containermenuhorizontalpersonalizados">
-            <nav style="display: inline-block">
-                <ul>
-                    <a class="menuhorizontalitemhome" href="./index.html">Home </a>
-                    <a class="menuhorizontalitemtienda" href="./paginas/tienda.html">Tienda</a>
-                    <a class="menuhorizontalitempersonalizadosv" href="./paginas/cuadrosPersonalizados.html">Cuadros personalizados</a>
-                    <a class="menuhorizontalitemmascotas"  href="./paginas/cuadrosdeMascotas.html">Cuadros mascotas</a>
-                    <a class="menuhorizontalitemcontacto" href="./paginas/contacto.html">Cotacto</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/iconos/iconoempresa.jpg" width="90px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../paginas/cuadrosPersonalizados.html">Cuadros Personalizados</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tienda
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Cuadros Animados</a></li>
+                    <li><a class="dropdown-item" href="#">Cuadros de Peliculas</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cuadros de Caricaturas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../paginas/cuadrosdeMascotas.html" tabindex="-1" aria-disabled="true">Cuadros Mascotas </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../paginas/contacto.html" tabindex="-1" aria-disabled="true">Contacto </a>
+                </li>
                 </ul>
-            </nav>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><img src="../assets/iconos/lupa.png" width="20px" alt=""></button>
+                </form>
+            </div>
         </div>
+    </nav>
+    
+    
+  
+  
+    <div class="tituloContactenos">
+        <h1>Cuadros Personalizados</h1>
+        <br>
         
-
-        <div class="iniciotienda">
-                <a id="inicio" href="../index.html">Inicio </a>
-                <a id="tiendabjbaner" href="../tienda.html">Tienda </a>
-                <h1 id="titulodetienda">Transforma tu Foto Favorita</h1>
-        </div>
-    </header>
+    </div>
+    
     
 <!--container slider-->
 
