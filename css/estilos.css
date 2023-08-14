@@ -4,58 +4,6 @@ padding: 0;
 font-family: 'poppins'sans-serif;
 box-sizing: border-box;
 }
-
-.baner{
-    background-color: rgb(235, 28, 207);
-    width: 100%;
-    HEIGHT: 50PX;
-    position: sticky;
-    top:0;
-}
-
-#containerfotoyc{
-    margin: 03%;
-}
-.menuhorizontal{
-    margin-top: 40px;
-    background-color: rgb(5, 2, 4);
-    color:white;
-    width: 100%;
-    HEIGHT: 50PX;
-    text-align: center;
-    align-items: center;      
-}
-.menuhorizontalitemhome{
-    color: white;
-    margin-right: 30px;
-}
-.menuhorizontalitemtienda{
-    color: white;
-    margin-right: 30px;
-}
-.menuhorizontalitempersonalizadosv{
-    color: white;
-    margin-right: 30px;
-}
-.menuhorizontalitemmascotas{
-    color: white;
-    margin-right: 30px;
-}
-.menuhorizontalitemcontacto{
-    color: white;
-    margin-right: 30px;
-}
-
-#logoempresa{
-    width: 68px;
-    height: 48px;
-    float:left;
-}
-#carritodecompras{
-    width: 50px;
-    height: 48px;
-    float:left;
-}
 #ubicacion{
     width: 68px;
     height: 48px;
@@ -81,78 +29,17 @@ box-sizing: border-box;
     margin: 40px;
     float: right;
     padding: 5px;
-
 }
-.buscar input{
-    width: 0px;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 18px;
-    color: #000;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 30px;
-    transition:all 0.6s ease;
-}
-.btn{
-    float: right;
-    top: 0;
-    right: 0;
-    background: #ee60d9;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    color: #f3e8f2;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.buscar:hover input{
-    width: 240px;
-}
-
-.buscar input :focus{
-    width: 240px;
-}
-
-#menuhorizontalitem{
-    color: white;
-    margin-left: 20px;   
-}
-.seccion1{
-    width: 30%;
-    height: 300px;
-}
-#img1seccion1{
-width: 45%;
-margin-top: 15%;
-transform: rotate(-15deg);
-}
-#img2seccion1{
-width: 47%;
-transform: rotate(15deg);
-}
-.seccion2{
-    float: right;
-    align-items: start;
-}
-
 .seccion3{
-    width: 100%;
-    margin-top: 15px;
-    color: rgb(226, 43, 165);
-    margin-top: 07%;
     text-align: center;
-    justify-content: center;
+    margin-top: 80px;
+    color:  rgb(235, 28, 207)
 }
-
 /* Metologia BEM*/
 .contenedorbem{
     justify-content: center;
-    width: 15000%;
     margin:100px;
-    gap: 50px;
+    gap: 10px;
     
 }
 .tarjeta{
@@ -160,7 +47,7 @@ transform: rotate(15deg);
     width: 1200px;
     border:5px double #7fc4fc;
     border-radius: 10px;
-    padding: 10px;
+    padding: 50px;
 }
 .tarjeta_imageninicio{
     text-align: center;
@@ -244,6 +131,56 @@ transform: rotate(15deg);
     width: 200px;
     height: 200px;
 }
+.flex-container2{
+    /* activamos flex*/
+display: flex;
+flex-direction: row-reverse;
+justify-content:end;
+margin: 45px;
+border-left: #285be9;
+}
+.cajacaj1{
+    /* box modeling*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #285be9;
+    margin: 10px;
+    text-align: center;
+
+    /* tipografia*/
+    color: #000;
+    text-align: ;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    
+}
+.flex-container{
+    display:flex;
+    align-content: center;
+    padding: 05px;
+    background-color: rgb(229, 232, 236);
+    flex-direction: row;
+    margin-left: 95px;
+    width: 92%;
+}
+
+.flex-container div{
+    background-color: rgb(1, 8, 8);
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    flex-basis: 20%;
+}
+@media (max-width: 600px) {
+    .flex-container{
+        flex-direction: column;       
+}
+.flex-container div{
+    flex-basis: 100%;
+    
+}
+}
+/*Boton whatsapp*/
 #btnwha{  
     display: inline-block; 
     margin: 30px;
@@ -282,22 +219,7 @@ transform: rotate(15deg);
     HEIGHT: 100%;
 }
 /*-------------Tienda--------------------*/
-.iniciotienda{
-    text-align: center;
-    margin: 02%;
-}
-#inicio{
-    text-align: center;
-    margin-top: 130;
-    color:     rgb(19, 18, 19);
-    padding: 10px;
-}
-#tiendabjbaner{
-    text-align: center;
-    margin-top: 1300px;
-    color:     rgb(19, 18, 19);
-    padding: 10px;
-}
+
 #titulodetienda{
     margin: 01%;
     color: #e928cf;
@@ -322,28 +244,7 @@ transform: rotate(15deg);
     align-items: center;
 }
 
-.flex-container2{
-    /* activamos flex*/
-display: flex;
-flex-direction: row-reverse;
-justify-content:end;
-margin: 45px;
-border-left: #285be9;
-}
-.cajacaj1{
-    /* box modeling*/
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    background-color: #285be9;
-    margin: 10px;
 
-    /* tipografia*/
-    color: #000;
-    font-family: 'poppins', sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
 .cajacaj2{
     /* box modeling*/
     width: 200px;
