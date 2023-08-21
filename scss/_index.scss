@@ -17,10 +17,39 @@
     justify-content: center;
 
 }
+.flex-container {
+    /* activamos flex*/
+    display: flex;
+    /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
+    flex-direction: row-reverse;
+
+    /*dispone los elementos flexibles en eje principal*/
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #7fc4fc;
+    background-color: #edf4fa;
+    padding: 6px;
+    margin-right: 20%;
+}
+
+
+.CUADROSDESTACADOS {
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(235, 28, 207);
+}
 .sec2index{
     margin-top: 120px;
 }
+.tarjeta_imageninicio, .tarjeta_imagengatitacafe {
+    padding-top: 15px;
+    text-align: center;
+    width: 380px;
+    height: 260px;
+    padding: 1em;
+}
 
+/*contenedor fonal*/
 .contenedorflexind{
     justify-content: center;
     margin-top: 90px;
@@ -31,15 +60,15 @@
 
     /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
     flex-direction: row-reverse;
-  
+
     /*dispone los elementos flexibles en eje principal*/
     justify-content: center;
     align-items: center;
     border: 3px solid #7fc4fc;
     background-color: #edf4fa;
     padding: 6px;
-  }
-  .cajacaj1 {
+}
+.cajacaj1 {
     /* box modeling*/
     width: 200px;
     height: 200px;
@@ -47,4 +76,28 @@
     background-color: #285be9;
     margin: 10px;
     text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(229, 232, 236);
+    justify-items: center;
+    width: 82%;
+
+    div {
+    background-color: rgb(1, 8, 8);
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    flex-basis: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+    flex-direction: column;
+
+    div {
+        flex-basis: 100%;
+    }
+    }
 }

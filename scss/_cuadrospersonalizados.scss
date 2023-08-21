@@ -9,49 +9,76 @@
 }
 #carouselExampleControls {
     margin-top: 50px;
-  }
-  
-  .d-item {
+}
+.d-item {
     height: 800px;
-  }
-  
-  .d-img {
+}
+.d-img {
     height: 100%;
     filter: brightness(0.6);
-  }
-  
-  .d2-item {
+}
+.d2-item {
     height: 800px;
-  }
-  
-  .d2-img {
+}
+.d2-img {
     height: 100%;
     filter: brightness(0.6);
-  }
-  
-  .d3-item {
+}
+.d3-item {
     height: 800px;
-  }
-  
-  .d3-img {
+}
+.d3-img {
     height: 100%;
     filter: brightness(0.6);
-  }
-  
-  .d4-item {
+}
+.d4-item {
     height: 800px;
-  }
-  
-  .d4-img {
+}
+.d4-img {
     height: 100%;
     filter: brightness(0.6);
-  }
-  
-  .d5-item {
+}
+.d5-item {
     height: 800px;
-  }
-  
-  .d5-img {
+}
+.d5-img {
     height: 100%;
     filter: brightness(0.6);
-  }
+}
+ /*pseudoclases */
+a {
+    &:hover {
+    font-size: 20px;
+    color: #e928cf;
+    }
+    &:active {
+    background-color: rgb(251, 255, 255);
+    color: #e928cf;
+    padding: 10px;
+    }
+    &:link {
+    color: rgb(3, 3, 1);
+    }
+    &:visited {
+    color: aqua;
+    }
+}
+/*Mdia quueris */
+/*cuando el usuario visiste esta pantalla muestrale el anco de la pantalla de la siguiente forma*/
+@media screen and (max-width: 480px) {
+.titulo-cuadrospersonalizados {
+    text-align: center;
+    color: #e928cf;
+    font-size: 18px;
+    border: 2px solid #000;
+    }
+}
+@media screen and (min-width: 786px) and (max-width: 992px) {
+.titulo-cuadrospersonalizados {
+    text-align: center;
+    color: #e928cf;
+    font-size: 18px;
+    border: 2px solid #000;
+    margin-top: 20px;
+    }
+}

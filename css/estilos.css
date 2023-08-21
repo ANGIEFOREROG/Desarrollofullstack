@@ -17,10 +17,39 @@
   justify-content: center;
 }
 
+.flex-container {
+  /* activamos flex*/
+  display: flex;
+  /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
+  flex-direction: row-reverse;
+  /*dispone los elementos flexibles en eje principal*/
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #7fc4fc;
+  background-color: #edf4fa;
+  padding: 6px;
+  margin-right: 20%;
+}
+
+.CUADROSDESTACADOS {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(235, 28, 207);
+}
+
 .sec2index {
   margin-top: 120px;
 }
 
+.tarjeta_imageninicio, .tarjeta_imagengatitacafe {
+  padding-top: 15px;
+  text-align: center;
+  width: 380px;
+  height: 260px;
+  padding: 1em;
+}
+
+/*contenedor fonal*/
 .contenedorflexind {
   justify-content: center;
   margin-top: 90px;
@@ -49,6 +78,27 @@
   text-align: center;
 }
 
+.flex-container {
+  display: flex;
+  background-color: rgb(229, 232, 236);
+  justify-items: center;
+  width: 82%;
+}
+.flex-container div {
+  background-color: rgb(1, 8, 8);
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  flex-basis: 20%;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container div {
+    flex-basis: 100%;
+  }
+}
 .titulopersonalizados {
   margin-top: 80px;
   background-color: rgb(255, 255, 255);
@@ -108,521 +158,43 @@
   filter: brightness(0.6);
 }
 
-/*mixin*/
-/*variable*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "poppins" sans-serif;
-  box-sizing: border-box;
-}
-
-.container-fluid {
-  background-color: rgb(146, 10, 128);
-}
-
-#ubicacion, #youtube, #instagram, #facebook {
-  width: 68px;
-  height: 48px;
-  float: right;
-}
-
-.buscar {
-  margin: 40px;
-  float: right;
-  padding: 5px;
-}
-
-.container-footer {
-  height: 90px;
-  text-align: center;
-}
-
-.footericen {
-  margin: 35px;
-  text-align: center;
-  color: rgb(243, 237, 242);
-}
-
-.seccion3 {
-  text-align: center;
-  margin-top: 80px;
-  color: rgb(235, 28, 207);
-}
-
-/* Metologia BEM*/
-.card-group {
-  margin-top: 70px;
-  color: #000000;
-}
-
-.CUADROSDESTACADOS {
-  margin-top: 40px;
-  text-align: center;
-  color: rgb(235, 28, 207);
-}
-
-.contenedorbem {
-  justify-content: center;
-  margin: 100px;
-  gap: 10px;
-  color: #4a0569;
-  background-color: #580a63;
-}
-
-.tarjeta {
-  text-align: center;
-  width: 1200px;
-  border: 5px double #7fc4fc;
-  border-radius: 10px;
-  padding: 50px;
-}
-
-.tarjeta_imageninicio, .tarjeta_imagengatitacafe {
-  padding-top: 15px;
-  text-align: center;
-  width: 380px;
-  height: 260px;
-  padding: 1em;
-}
-
-.tarjeta_imagenmorita, .tarjeta_imagenfamily, .tarjeta_imagensala {
-  width: 130px;
-  height: 160px;
-}
-
-.tarjeta_texto {
-  font-size: "Roboto", sans-serif;
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #1d1b1d;
-}
-
-/*flexbox*/
-.flex-container {
-  /* activamos flex*/
-  display: flex;
-  /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
-  flex-direction: row-reverse;
-  /*dispone los elementos flexibles en eje principal*/
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #7fc4fc;
-  background-color: #edf4fa;
-  padding: 6px;
-  margin-right: 20%;
-}
-
-.caja {
-  /* box modeling*/
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background-color: #285be9;
-  /* tipografia*/
-  color: #000;
-  font-family: "poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-.arbolmulti, .flores, .sala, #persoalizado {
-  width: 300px;
-  height: 200px;
-}
-
-#perrito {
-  width: 200px;
-  height: 200px;
-  gap: 20px;
-}
-
-.flex-container2 {
-  /* activamos flex*/
-  display: flex;
-  justify-content: end;
-  margin: 45px;
-}
-
-/*index*/
-.flex-container {
-  display: flex;
-  background-color: rgb(229, 232, 236);
-  justify-items: center;
-  width: 82%;
-}
-.flex-container div {
-  background-color: rgb(1, 8, 8);
-  margin: 5px;
-  color: rgb(255, 255, 255);
-  flex-basis: 20%;
-}
-
-@media (max-width: 600px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .flex-container div {
-    flex-basis: 100%;
-  }
-}
-/*Boton whatsapp*/
-.containerwhap {
-  margin-top: 10px;
-}
-
-#btnwha {
-  display: inline-block;
-  margin-top: 0px;
-  width: 40px;
-  font-size: 18x;
-  padding: 10px 15px;
-  border-radius: 60%;
-}
-
-#what {
-  width: 70px;
-  HEIGHT: 70PX;
-}
-
-.cuadroideal {
-  text-align: center;
-  color: rgb(14, 13, 13);
-}
-
-#tituloideal {
-  margin: 15px;
-  text-align: center;
-  color: rgb(235, 28, 207);
-}
-
-/*-------------Tienda--------------------*/
-/*tienda */
-.titulotienda {
-  text-align: center;
-  margin-top: 70px;
-  color: rgb(20, 19, 20);
-}
-
-.cardtien {
-  width: 90%;
-  margin: 0 auto;
-  padding: 60px 0;
-  max-width: 1200px;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 3.5em;
-  flex-wrap: wrap;
-}
-
-.card_item {
-  background-color: #e8dbee;
-  padding-bottom: 3em;
-  flex-wrap: wrap;
-  max-width: 450px;
-  flex-grow: 1;
-  flex-basis: 280px;
-}
-
-.card-content {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.card_picture {
-  width: 70%;
-  margin: 0 auto;
-  background: #e8eaf0;
-  position: relative;
-  bottom: 2em;
-}
-
-.card_img {
-  width: 100%;
-}
-
-/*tienda */
-.titulodetienda {
-  margin: 1%;
-  color: #242223;
-  font-size: 2rem;
-  text-align: center;
-}
-
-#tituloideal {
-  margin-top: 90px;
-  text-align: center;
-  color: rgb(19, 18, 19);
-  justify-content: center;
-  margin-top: 5%;
+/*pseudoclases */
+a:hover {
+  font-size: 20px;
   color: #e928cf;
-  font-size: 2rem;
-  text-align: center;
+}
+a:active {
+  background-color: rgb(251, 255, 255);
+  color: #e928cf;
+  padding: 10px;
+}
+a:link {
+  color: rgb(3, 3, 1);
+}
+a:visited {
+  color: aqua;
 }
 
-.listadesple {
-  margin-top: 40px;
-  width: 32%;
-  height: 30%;
-  align-items: center;
+/*Mdia quueris */
+/*cuando el usuario visiste esta pantalla muestrale el anco de la pantalla de la siguiente forma*/
+@media screen and (max-width: 480px) {
+  .titulo-cuadrospersonalizados {
+    text-align: center;
+    color: #e928cf;
+    font-size: 18px;
+    border: 2px solid #000;
+  }
 }
-
-.cajacaj2 {
-  /* box modeling*/
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background-color: #285be9;
-  margin: 10px;
-  /* tipografia*/
-  color: #000;
-  font-family: "poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .titulo-cuadrospersonalizados {
+    text-align: center;
+    color: #e928cf;
+    font-size: 18px;
+    border: 2px solid #000;
+    margin-top: 20px;
+  }
 }
-
-.cajacj3, .cajacj4, .cajacj5 {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background-color: #285be9;
-  margin: 10px;
-  /* tipografia*/
-  color: #000;
-  font-family: "poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-#botondecomprarahora {
-  background-color: rgb(22, 216, 216);
-  border-radius: 30px;
-  width: 70%;
-  height: 15%;
-  text-align: center;
-  margin: 5%;
-}
-
-.flex-container3 {
-  /* activamos flex*/
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: end;
-  margin: 200px;
-  border-left: #285be9;
-}
-
-.cj1C, .cj2C {
-  /* box modeling*/
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background-color: #285be9;
-  margin: 10px;
-  /* tipografia*/
-  color: #000;
-  font-family: "poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-.cj3C, .cj4C {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  background-color: #285be9;
-  margin: 5px;
-  /* tipografia*/
-  color: #000;
-  font-family: "poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-.conttarjetas {
-  /*box-modeling*/
-  padding: 60px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: end;
-  margin: 100px;
-  border-left: #285be9;
-}
-
-.imgtarjetas {
-  width: 600px;
-  height: 200px;
-  justify-items: center;
-}
-
-/*cuadros personalizados*/
-/*cuadros mascotas */
-.grid-containermascota {
-  /*Box modeling*/
-  justify-content: center;
-  width: 40%;
-  margin: auto;
-  flex-wrap: wrap;
-  /*activamos grid*/
-  display: grid;
-  /*definimos la cantidad de columnas y el ancho de las mismas*/
-  grid-template-columns: repeat(3, 1fr);
-  /*definimos  la canidad de filas y el alto de las mismas*/
-  column-gap: 2px;
-  row-gap: 5px;
-}
-
-.container-text-center {
-  width: 90%;
-  margin: 0 auto;
-  padding: 60px 0;
-  max-width: 1200px;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 4.5em;
-  flex-wrap: wrap;
-}
-
-.grid-containermascota > div {
-  /*box-modeling*/
-  background-color: #e8dbee;
-  padding-bottom: 3em;
-  flex-wrap: wrap;
-  max-width: 450px;
-  flex-grow: 1;
-  flex-basis: 280px;
-  display: block;
-  border: 1px solid #000;
-  padding: 20px;
-  background-color: #ecf0f3;
-  flex-basis: 0;
-}
-
-.card shadow {
-  background-color: #e8dbee;
-  padding-bottom: 3em;
-  flex-wrap: wrap;
-  max-width: 450px;
-  flex-grow: 1;
-  flex-basis: 280px;
-}
-
-.EscogetucuadroFavorito {
-  margin-top: 30px;
-  text-align: center;
-  color: #0e0d0d;
-}
-
-.imgcperrito {
-  width: 330px;
-  height: 300px;
-}
-
-.titulosimp {
-  font-family: 20px;
-  color: #285be9;
-}
-
-#botongridcompra {
-  background-color: rgb(22, 216, 216);
-  border-radius: 30px;
-  width: 70%;
-  height: 12%;
-  text-align: center;
-  margin: 5%;
-}
-
-.imgcluna {
-  width: 330px;
-  height: 300px;
-}
-
-.titulosmadera {
-  font-family: 20px;
-  color: #285be9;
-}
-
-.imgccaballo {
-  width: 330px;
-  height: 300px;
-}
-
-.titulosimgcaballo {
-  font-family: 20px;
-  color: #285be9;
-}
-
-.imgcperritodimen {
-  width: 300px;
-  height: 270px;
-}
-
-.titulosperritodimen {
-  font-family: 20px;
-  color: #285be9;
-}
-
-.imgctigre {
-  width: 300px;
-  height: 270px;
-}
-
-.titulostigre {
-  font-family: 20px;
-  color: #285be9;
-}
-
-.imgckoala {
-  width: 300px;
-  height: 270px;
-}
-
-.tituloskoala {
-  font-family: 20px;
-  color: #285be9;
-}
-
-.botondeinformation {
-  bottom: 5px;
-  color: #101013;
-  background-color: #77dbe9;
-  border-radius: 10px;
-  height: 50px;
-  width: 100px;
-}
-
-.title {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.video {
-  width: 20px;
-  position: relative;
-  margin-left: auto;
-  margin-right: 20px;
-  content: "";
-  display: block;
-  width: 90%;
-  padding-bottom: 54.22%;
-}
-
-.classvideo {
-  justify-items: center;
-  width: 90%;
-  height: 90%;
-  position: absolute;
-}
-
-.textofinal {
-  position: re;
-  text-align: center;
-}
-
+/*mixin*/
 /*contacto*/
 .contentcontac {
   max-width: 1170px;
@@ -742,47 +314,225 @@
   padding: 0 1.5em;
 }
 
-.titulo-cuadrospersonalizados {
+/*cuadros mascotas*/
+.EscogetucuadroFavorito {
+  margin-top: 30px;
   text-align: center;
-  color: #e928cf;
-  font-family: "robot", sans-serif;
+  color: #0e0d0d;
 }
 
-/*pseudoclases */
-a:hover {
-  font-size: 20px;
-  color: #e928cf;
-}
-a:active {
-  background-color: rgb(251, 255, 255);
-  color: #e928cf;
-  padding: 10px;
-}
-a:link {
-  color: rgb(3, 3, 1);
-}
-a:visited {
-  color: aqua;
+.title {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-/*Mdia quueris */
-/*cuando elusuario visiste esta pantalla muestrale el anco de la pantalla de la siguiente forma*/
-@media screen and (max-width: 480px) {
-  .titulo-cuadrospersonalizados {
-    text-align: center;
-    color: #e928cf;
-    font-size: 18px;
-    border: 2px solid #000;
-  }
+.botondeinformation {
+  bottom: 5px;
+  color: #101013;
+  background-color: #77dbe9;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
 }
-@media screen and (min-width: 786px) and (max-width: 992px) {
-  .titulo-cuadrospersonalizados {
-    text-align: center;
-    color: #e928cf;
-    font-size: 18px;
-    border: 2px solid #000;
-    margin-top: 20px;
-  }
+
+.card-group {
+  margin-top: 70px;
+  color: #000000;
+}
+
+.imgcluna {
+  width: 330px;
+  height: 300px;
+}
+
+.titulosmadera {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgccaballo {
+  width: 330px;
+  height: 300px;
+}
+
+.titulosimgcaballo {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgcperritodimen {
+  width: 300px;
+  height: 270px;
+}
+
+.titulosperritodimen {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgctigre {
+  width: 300px;
+  height: 270px;
+}
+
+.titulostigre {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgckoala {
+  width: 300px;
+  height: 270px;
+}
+
+.tituloskoala {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.video {
+  width: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+  content: "";
+  display: block;
+  width: 90%;
+  padding-bottom: 54.22%;
+}
+
+.classvideo {
+  justify-items: center;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+}
+
+.textofinal {
+  position: re;
+  text-align: center;
+}
+
+.cuadroideal {
+  margin: 10px;
+  text-align: center;
+  color: rgb(14, 13, 13);
+}
+
+#tituloideal {
+  margin: 35px;
+  text-align: center;
+  color: rgb(235, 28, 207);
+}
+
+/*tienda */
+.titulotienda {
+  text-align: center;
+  margin-top: 70px;
+  color: rgb(20, 19, 20);
+}
+
+.titulodetienda {
+  text-align: center;
+  margin: 1%;
+  color: #242223;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#tituloideal {
+  margin-top: 90px;
+  text-align: center;
+  color: rgb(19, 18, 19);
+  justify-content: center;
+  margin-top: 5%;
+  color: #e928cf;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.listadesple {
+  margin-top: 40px;
+  width: 32%;
+  height: 30%;
+  align-items: center;
+}
+
+#botondecomprarahora {
+  background-color: rgb(22, 216, 216);
+  border-radius: 30px;
+  width: 70%;
+  height: 15%;
+  text-align: center;
+  margin: 5%;
+}
+
+.cardtien {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3.5em;
+  flex-wrap: wrap;
+}
+
+.card_item {
+  background-color: #e8dbee;
+  padding-bottom: 3em;
+  flex-wrap: wrap;
+  max-width: 450px;
+  flex-grow: 1;
+  flex-basis: 280px;
+}
+
+.card-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card_picture {
+  width: 70%;
+  margin: 0 auto;
+  background: #e8eaf0;
+  position: relative;
+  bottom: 2em;
+}
+
+.card_img {
+  width: 100%;
+}
+
+/*variable*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  background-color: rgb(146, 10, 125);
+}
+
+.container-footer {
+  height: 90px;
+  text-align: center;
+}
+
+.footericen {
+  margin: 35px;
+  text-align: center;
+  color: rgb(243, 237, 242);
+}
+
+#ubicacion, #youtube, #instagram, #facebook {
+  width: 68px;
+  height: 48px;
+  float: right;
 }
 
 /*# sourceMappingURL=estilos.css.map */
