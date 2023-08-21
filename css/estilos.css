@@ -4,6 +4,10 @@ padding: 0;
 font-family: 'poppins'sans-serif;
 box-sizing: border-box;
 }
+.container-fluid{
+    background-color:  rgb(146, 10, 128);
+
+}
 #ubicacion{
     width: 68px;
     height: 48px;
@@ -30,16 +34,54 @@ box-sizing: border-box;
     float: right;
     padding: 5px;
 }
+.container-footer{
+    height: 90px;
+    text-align: center;
+    
+}
+.footericen{
+    margin: 35px;
+    text-align: center;
+    color:     rgb(243, 237, 242)
+
+}
 .seccion3{
     text-align: center;
     margin-top: 80px;
     color:  rgb(235, 28, 207)
 }
 /* Metologia BEM*/
+.card-group{
+    margin-top: 70px;
+    color: #000000;
+
+}
+.cardinicios{
+margin-top: 29px;
+background-color: #d5ccda;
+border-radius: 15px;
+box-shadow: 16px 14px 20px #bd7edf;
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content:center ;
+}
+
+
+
+.CUADROSDESTACADOS{
+    margin-top: 40px;
+    text-align: center;
+    color:     rgb(235, 28, 207)
+
+}
 .contenedorbem{
     justify-content: center;
     margin:100px;
     gap: 10px;
+    color: #4a0569;
+    background-color: #580a63;
     
 }
 .tarjeta{
@@ -50,13 +92,19 @@ box-sizing: border-box;
     padding: 50px;
 }
 .tarjeta_imageninicio{
+    padding-top: 15px;
     text-align: center;
-    width: 130px;
+    width: 380px;
+    height: 260px;
+    padding: 1em;
     
 }
 .tarjeta_imagengatitacafe{
-    width: 130px;
-    height: 160px; 
+    padding-top: 15px;
+    text-align: center;
+    width: 380px;
+    height: 260px;
+    padding: 1em; 
 }
 .tarjeta_imagenmorita{
     width: 130px;
@@ -78,32 +126,34 @@ box-sizing: border-box;
     font-size: 18px;
     margin-bottom: 20px;
     color:#1d1b1d
-
 }
+
+
 /*flexbox*/
 .flex-container{
     /* activamos flex*/
     display: flex;
+    margin-top: 20px;
     /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
     flex-direction: row-reverse;
     /*dispone los elementos flexibles en eje principal*/
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    
 
     border: 3px solid #7fc4fc;
     background-color: #edf4fa;
-    padding: 149px;
-    margin: 5px;
+    padding: 6px;
+    margin-right: 20%;
 
 }
+
 .caja{
     /* box modeling*/
     width: 200px;
     height: 200px;
     border: 1px solid #ccc;
     background-color: #285be9;
-    margin: 5px;
+    
 
     /* tipografia*/
     color: #000;
@@ -111,33 +161,34 @@ box-sizing: border-box;
     font-weight: bold;
     text-align: center;
 }
-#arbolmulti{
-    width: 200px;
+.arbolmulti{
+    width: 300px;
     height: 200px;
 }
-#flores{
-    width: 200px;
+.flores{
+    width: 300px;
     height: 200px;
 }
-#sala{
-    width: 200px;
+.sala{
+    width: 300px;
     height: 200px;
 }
 #persoalizado{
-    width: 200px;
+    width: 300px;
     height: 200px;
 }
 #perrito{
     width: 200px;
     height: 200px;
+    gap: 20px;
 }
+
 .flex-container2{
     /* activamos flex*/
 display: flex;
-flex-direction: row-reverse;
 justify-content:end;
 margin: 45px;
-border-left: #285be9;
+
 }
 .cajacaj1{
     /* box modeling*/
@@ -155,14 +206,12 @@ border-left: #285be9;
     font-weight: bold;
     
 }
+/*index*/
 .flex-container{
     display:flex;
-    align-content: center;
-    padding: 05px;
     background-color: rgb(229, 232, 236);
-    flex-direction: row;
-    margin-left: 95px;
-    width: 92%;
+    justify-items: center;
+    width: 82%;
 }
 
 .flex-container div{
@@ -181,9 +230,12 @@ border-left: #285be9;
 }
 }
 /*Boton whatsapp*/
+.containerwhap{
+    margin-top: 10px;
+}
 #btnwha{  
     display: inline-block; 
-    margin: 30px;
+    margin-top: 0px;
     width: 40px;
     font-size: 18x;
     padding: 10px 15px;
@@ -204,22 +256,53 @@ border-left: #285be9;
     color:     rgb(235, 28, 207)
 
 }
-.footer{
-    text-align: center;
-    border: 3px solid #0f0f0f;
-    color:rgb(252, 249, 249);
-    width: 100%;
-    justify-content: center;
-}
 
-.footerdi{
-    margin-top: 08%;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    HEIGHT: 100%;
-}
 /*-------------Tienda--------------------*/
+/*tienda */
+.titulotienda{
+    text-align: center;
+    margin-top: 70px;
+    color:   rgb(20, 19, 20);
+}
+.cardtien{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3.5em;
+    flex-wrap:wrap ;
+    
+}
+.card_item{
+    background-color: #e8dbee;
+    padding-bottom: 3em;
+    flex-wrap: wrap;
+    max-width: 450px;
+    flex-grow: 1;
+    flex-basis: 280px;
 
+}
+.card-content{
+    width: 90%;
+    margin: 0 auto;
+}
+.card_picture{
+    width: 70%;
+    margin:0  auto ;
+    background: #e8eaf0;
+    position: relative;
+    bottom: 2em;
+}
+.card_img{
+width: 100%;
+
+
+}
+/*tienda */
 #titulodetienda{
     margin: 01%;
     color: #e928cf;
@@ -387,10 +470,20 @@ border-left: #285be9;
     justify-items: center;
 }
 /*cuadros personalizados*/
-.containermenuhorizontalpersonalizados{
+
+.titulopersonalizados{
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+    color: #141414;;
+    width: 100%;
+    HEIGHT: 50PX;
     text-align: center;
-    background-color: #000;
-    height: 50px;
+    justify-content: center;
+}
+
+#carouselExampleControls{
+margin-top: 50px;
+
 }
 .d-item{
     height:800px;
@@ -428,19 +521,6 @@ filter: brightness(0.6);
     filter: brightness(0.6);
 }
 
-.container-footer{
-    height: 150px;
-    text-align: center;
-    
-}
-.footericen{
-    margin: 15px;
-    text-align: center;
-    color:     rgb(243, 237, 242)
-
-}
-
-    
 
 /*cuadros mascotas */
 .grid-containermascota{
@@ -448,32 +528,66 @@ filter: brightness(0.6);
 justify-content: center;
 width:40%;
 margin: auto;
-
-
+flex-wrap:wrap;
 
 /*activamos grid*/
 display:grid;
-
-
 /*definimos la cantidad de columnas y el ancho de las mismas*/
 grid-template-columns: repeat(3,1fr);
 /*definimos  la canidad de filas y el alto de las mismas*/
-column-gap: 5px;
+column-gap: 2px;
 row-gap: 5px;
 }
+.container-text-center{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4.5em;
+    flex-wrap:wrap ;
 
+
+}
 .grid-containermascota > div{
     /*box-modeling*/
+    background-color: #e8dbee;
+    padding-bottom: 3em;
+    flex-wrap: wrap;
+    max-width: 450px;
+    flex-grow: 1;
+    flex-basis: 280px;
+
     display: block;
     border: 1px solid #000;
     padding: 20px; 
     background-color: #ecf0f3;
+    flex-basis: 0;
     
+}
+
+.card shadow{
+    background-color: #e8dbee;
+    padding-bottom: 3em;
+    flex-wrap: wrap;
+    max-width: 450px;
+    flex-grow: 1;
+    flex-basis: 280px;
+}
+.EscogetucuadroFavorito{
+    margin-top: 30px;
+    text-align: center;
+    color: #0e0d0d;
+
 }
 .imgcperrito{
     width:330px;
     height:300px;  
 }
+
 .titulosimp{
     font-family: 20px;
     color: #285be9;
@@ -527,74 +641,166 @@ row-gap: 5px;
     font-family: 20px;
     color: #285be9; 
 }
-.videopag{
-margin-top: 100px;
-text-align: center;
-}   
+.botondeinformation{
+    bottom: 5px;
+    color: #101013;
+    background-color: #77dbe9;
+    border-radius: 10px;
+    height:50px;
+    width: 100px;
+}
 
-
-/* contacto */
-.tituloContactenos{
-    margin-top: 40px;
-    background-color: rgb(255, 255, 255);
-    color:rgb(150, 44, 131);
-    width: 100%;
-    HEIGHT: 50PX;
+.title{
+    font-size: 2.5rem;
     text-align: center;
-    justify-content: center;
     
 }
+.video{
+    
+    width: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 20px;
+
+}
+.video{
+    content: "";
+    display: block;
+    width: 90%;
+    padding-bottom: 54.22%;
+}
+.classvideo{
+    justify-items: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+
+}
+.textofinal{
+    position: re;
+    text-align: center;
+}
 
 
+/*contacto*/
+.contentcontac{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.logo{
+    text-align: center;
+    font-size: 3em;
+    margin: 25px;
+    color:   rgb(20, 17, 20);
 
-.DivformularioContactenos{
-    margin-top: 40px;
-    display: flex;
+}
+.logo span{
+    color: #000000;
+}
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgb(229, 232, 236, .3);
+
+}
+.contact-wrapper >*{
+    padding: 4em;
+
+}
+.contact-form{
+    background:#1d1b1d;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block{
+    grid-column: 1/3;
+}
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background:none ;
+    outline: o;
+    color: #dadfdf;
+    border-bottom: 1px solid #af07c5 ;
+}
+.contact-form form button{
+    background: #580a63;
+    border: 0;
+    text-transform:uppercase;
+    padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form form button:focus{
+    background: #c7cccf;
+    color: #000;
+    transition:bacbackground-color 1s ease-out;
+    outline:0;
+}
+
+.contacto-info{
+    background-color: #580a63;
+    padding: 30%;
+
+}
+
+.contacto-info h4{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/*largescrren*/
+@media (min-width:700px) {
+    main{
+        padding: 0 4rem;
+    }
+    .contact-wrapper{
+        display:grid ;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .contact-wrapper>*{
+        padding: 2em;
+    }
+}
+.map-area{
+    width: 600px;
+    height: 465px;
+    background: #ccc;
+    box-shadow: rgb(0, 0, 0)0 5px 15px;
+}
+.map-area iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/*responsive */
+@media(max-width:991px) {
+    .contact-form {
+        margin-bottom: 30px;
+    }
+    .map-area{
+        width: 100%;
+        height: 400px;
+    }
     
 }
-
-.divMapa{
-    width: 70%;
-    float: left;
-    
+.sectioncontacto{
+    margin-top: 08%;
+    background: #77dbe9;
+    color: #ecf0f3;
+    font-family: 'Quicksand', sans-serif ;
+    padding: 0 1.5em;
 }
-.contenedorContactenos {
-    background-color: #94c9dc;
-    width: 30%;
-    height: 450px;
-}
-.formularioContatenos{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-top: 30px;
-    border: 1px solid #ccc;
-    
-}
-
-label {
-    margin-bottom: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-input, textarea {
-    margin-bottom: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.imagenmapa{
-    margin-left: 20px;
-    height: 500px;
-
-}
-
-.botonContacto{
-    background-color: #e928cf;
-    color: white; 
-}
-
 .titulo-cuadrospersonalizados{
 
     text-align: center;
@@ -613,7 +819,7 @@ a:active{
     padding: 10px;
 }
 a:link{
-    color: rgb(221, 235, 101);
+    color: rgb(3, 3, 1);
 }
 a:visited{
     color: aqua;
