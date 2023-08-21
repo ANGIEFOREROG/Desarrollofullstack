@@ -96,7 +96,7 @@
   .flex-container {
     /* activamos flex*/
     display: flex;
-    margin-top: 20px;
+   
   
     /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
     flex-direction: row-reverse;
@@ -142,20 +142,6 @@
     margin: 45px;
   }
   
-  .cajacaj1 {
-    /* box modeling*/
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    background-color: #285be9;
-    margin: 10px;
-    text-align: center;
-  
-    /* tipografia*/
-    color: #000;
-    font-family: 'poppins', sans-serif;
-    font-weight: bold;
-  }
   
   /*index*/
   
