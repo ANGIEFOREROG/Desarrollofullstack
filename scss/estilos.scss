@@ -1,5 +1,7 @@
  
  @import "index";
+ @import"cuadrosPersonalizados";
+ @import "general";
  /*variable*/
 * {
     margin: 0;
@@ -250,10 +252,10 @@
   
   /*tienda */
   
-  #titulodetienda {
+  .titulodetienda {
     margin: 01%;
-    color: #e928cf;
-    text-align: center;
+    color: #242223;
+    @include titulostienda;
   }
   
   #tituloideal {
@@ -262,8 +264,8 @@
     color: rgb(19, 18, 19);
     justify-content: center;
     margin-top: 05%;
-    text-align: center;
     color: #e928cf;
+    @include titulostienda;
   }
   
   .listadesple {
@@ -367,64 +369,9 @@
   
   /*cuadros personalizados*/
   
-  .titulopersonalizados {
-    margin-top: 80px;
-    background-color: rgb(255, 255, 255);
-    color: #141414;
-    width: 100%;
-    HEIGHT: 50PX;
-    text-align: center;
-    justify-content: center;
-  }
+ 
   
-  #carouselExampleControls {
-    margin-top: 50px;
-  }
   
-  .d-item {
-    height: 800px;
-  }
-  
-  .d-img {
-    height: 100%;
-    filter: brightness(0.6);
-  }
-  
-  .d2-item {
-    height: 800px;
-  }
-  
-  .d2-img {
-    height: 100%;
-    filter: brightness(0.6);
-  }
-  
-  .d3-item {
-    height: 800px;
-  }
-  
-  .d3-img {
-    height: 100%;
-    filter: brightness(0.6);
-  }
-  
-  .d4-item {
-    height: 800px;
-  }
-  
-  .d4-img {
-    height: 100%;
-    filter: brightness(0.6);
-  }
-  
-  .d5-item {
-    height: 800px;
-  }
-  
-  .d5-img {
-    height: 100%;
-    filter: brightness(0.6);
-  }
   
   /*cuadros mascotas */
   
