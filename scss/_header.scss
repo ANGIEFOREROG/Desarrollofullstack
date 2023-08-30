@@ -8,5 +8,8 @@
 }
 
 .container-fluid {
-    background-color: rgb(146, 10, 125);
+    /*Gradientes*/
+    background: rgb(194,174,238);
+    background: radial-gradient(circle, rgba(194,174,238,0.6138830532212884) 28%, rgba(235,30,179,1) 91%);
+    /*background-color: rgb(146, 10, 125);*/
 }

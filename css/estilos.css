@@ -1,8 +1,8 @@
 .cardinicios {
-  margin-top: 29px;
-  background-color: #d5ccda;
+  margin-top: 99px;
+  background-color: #eadbf2;
   border-radius: 15px;
-  box-shadow: 16px 14px 20px #bd7edf;
+  box-shadow: 16px 14px 20px #315173;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -97,6 +97,23 @@
   }
   .flex-container div {
     flex-basis: 100%;
+  }
+}
+.parrafofinal {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes parrafofinal {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 .titulopersonalizados {
@@ -321,8 +338,8 @@ a:visited {
   color: #0e0d0d;
 }
 
-.title {
-  font-size: 2.5rem;
+.title2video {
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -515,7 +532,10 @@ a:visited {
 }
 
 .container-fluid {
-  background-color: rgb(146, 10, 125);
+  /*Gradientes*/
+  background: rgb(194, 174, 238);
+  background: radial-gradient(circle, rgba(194, 174, 238, 0.6138830532) 28%, rgb(235, 30, 179) 91%);
+  /*background-color: rgb(146, 10, 125);*/
 }
 
 .container-footer {
