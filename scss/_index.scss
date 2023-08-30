@@ -1,4 +1,22 @@
 
+.icono-empresa{
+
+    animation-name: logo-la-paez;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-duration: 3s;
+
+}
+@keyframes logo-la-paez{
+0%{
+        transform:rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
 .cardinicios {
     margin-top: 99px;
     background-color: #eadbf2;
@@ -101,13 +119,15 @@
     }
     }
 }
+/*Animaciones*/
 .parrafofinal{
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
+    animation-name: parrafo;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out;
+    animation-duration: 4s;
+    animation-delay: 3s;
 }
-@keyframes parrafofinal {
+@keyframes parrafo {
     from {
     margin-left: 100%;
     width: 300%;
