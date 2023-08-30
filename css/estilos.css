@@ -280,7 +280,7 @@ a:visited {
 }
 
 .contacto-info {
-  background-color: #580a63;
+  background-color: #1f1b1f;
   padding: 30%;
 }
 .contacto-info h4 {
@@ -324,8 +324,8 @@ a:visited {
   }
 }
 .sectioncontacto {
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
   margin: 0;
-  background: #77dbe9;
   color: #ecf0f3;
   font-family: "Quicksand", sans-serif;
   padding: 0 1.5em;
@@ -346,7 +346,7 @@ a:visited {
 .botondeinformation {
   bottom: 5px;
   color: #101013;
-  background-color: #77dbe9;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   border-radius: 10px;
   height: 50px;
   width: 100px;
@@ -476,7 +476,7 @@ a:visited {
 }
 
 #botondecomprarahora {
-  background-color: rgb(22, 216, 216);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   border-radius: 30px;
   width: 70%;
   height: 15%;
@@ -534,7 +534,7 @@ a:visited {
 .container-fluid {
   /*Gradientes*/
   background: rgb(194, 174, 238);
-  background: radial-gradient(circle, rgba(194, 174, 238, 0.6138830532) 28%, rgb(235, 30, 179) 91%);
+  background: radial-gradient(circle, rgba(194, 174, 238, 0.6138830532) 28%, rgb(216, 62, 175) 91%);
   /*background-color: rgb(146, 10, 125);*/
 }
 
