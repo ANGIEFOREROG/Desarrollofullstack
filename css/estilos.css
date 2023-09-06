@@ -37,7 +37,9 @@
   /* activamos flex*/
   display: flex;
   /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
+  margin-top: 5%;
   flex-direction: row-reverse;
+  margin-left: 80px;
   /*dispone los elementos flexibles en eje principal*/
   justify-content: center;
   align-items: center;
