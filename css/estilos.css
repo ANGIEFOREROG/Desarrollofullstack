@@ -230,6 +230,22 @@ a:visited {
   }
 }
 /*mixin*/
+.whatsappimg {
+  animation-name: logo-what;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+
+@keyframes logo-what {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*contacto*/
 .contentcontac {
   max-width: 1170px;
