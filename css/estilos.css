@@ -256,7 +256,7 @@ a:visited {
 }
 
 .contact-form {
-  background: #1d1b1d;
+  background-color: #161628;
 }
 .contact-form form {
   display: grid;
@@ -298,7 +298,8 @@ a:visited {
 }
 
 .contacto-info {
-  background-color: #1f1b1f;
+  background-color: #161628;
+  margin: 2px;
   padding: 30%;
 }
 .contacto-info h4 {
