@@ -237,7 +237,7 @@ a:visited {
   animation-iteration-count: 5;
   animation-timing-function: ease-out;
   animation-delay: 2s;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 @keyframes logo-what {
