@@ -1,0 +1,597 @@
+.icono-empresa {
+  animation-name: logo-la-paez;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+
+@keyframes logo-la-paez {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cardinicios {
+  margin-top: 99px;
+  background-color: #eadbf2;
+  border-radius: 15px;
+  box-shadow: 16px 14px 20px #315173;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+  text-align: center;
+}
+
+.cuadrosdecorativosinc {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  /* activamos flex*/
+  display: flex;
+  /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
+  margin-top: 5%;
+  flex-direction: row-reverse;
+  margin-left: 70px;
+  /*dispone los elementos flexibles en eje principal*/
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #7fc4fc;
+  background-color: #edf4fa;
+  padding: 6px;
+  margin-right: 20%;
+}
+
+.CUADROSDESTACADOS {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(235, 28, 207);
+}
+
+.sec2index {
+  margin-top: 120px;
+}
+
+.tarjeta_imageninicio, .tarjeta_imagengatitacafe {
+  padding-top: 15px;
+  text-align: center;
+  width: 380px;
+  height: 260px;
+  padding: 1em;
+}
+
+/*contenedor fonal*/
+.contenedorflexind {
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.flex-container {
+  /* activamos flex*/
+  display: flex;
+  /* definimos cual ser nuestro main axis y cual o si sera fila o colunma*/
+  flex-direction: row-reverse;
+  /*dispone los elementos flexibles en eje principal*/
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #7fc4fc;
+  background-color: #edf4fa;
+  padding: 6px;
+}
+
+.cajacaj1 {
+  /* box modeling*/
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-color: #285be9;
+  margin: 10px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  background-color: rgb(229, 232, 236);
+  justify-items: center;
+  width: 82%;
+}
+.flex-container div {
+  background-color: rgb(1, 8, 8);
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  flex-basis: 20%;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container div {
+    flex-basis: 100%;
+  }
+}
+/*Animaciones*/
+.parrafofinal {
+  animation-name: parrafo;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-out;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+@keyframes parrafo {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.titulopersonalizados {
+  margin-top: 80px;
+  background-color: rgb(255, 255, 255);
+  color: #141414;
+  width: 100%;
+  HEIGHT: 50PX;
+  text-align: center;
+  justify-content: center;
+}
+
+#carouselExampleControls {
+  margin-top: 50px;
+}
+
+.d-item {
+  height: 800px;
+}
+
+.d-img {
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+.d2-item {
+  height: 800px;
+}
+
+.d2-img {
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+.d3-item {
+  height: 800px;
+}
+
+.d3-img {
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+.d4-item {
+  height: 800px;
+}
+
+.d4-img {
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+.d5-item {
+  height: 800px;
+}
+
+.d5-img {
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+/*pseudoclases */
+a:hover {
+  font-size: 20px;
+  color: #e928cf;
+}
+a:active {
+  background-color: rgb(251, 255, 255);
+  color: #e928cf;
+  padding: 10px;
+}
+a:link {
+  color: rgb(3, 3, 1);
+}
+a:visited {
+  color: aqua;
+}
+
+/*Mdia quueris */
+/*cuando el usuario visiste esta pantalla muestrale el anco de la pantalla de la siguiente forma*/
+@media screen and (max-width: 480px) {
+  .titulo-cuadrospersonalizados {
+    text-align: center;
+    color: #e928cf;
+    font-size: 18px;
+    border: 2px solid #000;
+  }
+}
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .titulo-cuadrospersonalizados {
+    text-align: center;
+    color: #e928cf;
+    font-size: 18px;
+    border: 2px solid #000;
+    margin-top: 20px;
+  }
+}
+/*mixin*/
+.whatsappimg {
+  animation-name: logo-what;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+
+@keyframes logo-what {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*contacto*/
+.contentcontac {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+  margin: 25px;
+  color: rgb(20, 17, 20);
+}
+.logo span {
+  color: #000000;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(229, 232, 236, 0.3);
+}
+.contact-wrapper > * {
+  padding: 4em;
+}
+
+.contact-form {
+  background-color: #161628;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block {
+  grid-column: 1/3;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form button, .contact-form form input, .contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: o;
+  color: #dadfdf;
+  border-bottom: 1px solid #af07c5;
+}
+.contact-form form button {
+  background: #580a63;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.contact-form form button:hover {
+  background: #c7cccf;
+  color: #000;
+  transition: bacbackground-color 1s ease-out;
+  outline: 0;
+}
+.contact-form form form button:focus {
+  background: #c7cccf;
+  color: #000;
+  transition: bacbackground-color 1s ease-out;
+  outline: 0;
+}
+
+.contacto-info {
+  background-color: #161628;
+  margin: 2px;
+  padding: 30%;
+}
+.contacto-info h4 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/*largescrren*/
+@media (min-width: 700px) {
+  main {
+    padding: 0 4rem;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+}
+.map-area {
+  width: 600px;
+  height: 465px;
+  background: #ccc;
+  box-shadow: rgb(0, 0, 0) 0 5px 15px;
+}
+.map-area iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*responsive */
+@media (max-width: 991px) {
+  .contact-form {
+    margin-bottom: 30px;
+  }
+  .map-area {
+    width: 100%;
+    height: 400px;
+  }
+}
+.sectioncontacto {
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  margin: 0;
+  color: #ecf0f3;
+  font-family: "Quicksand", sans-serif;
+  padding: 0 1.5em;
+}
+
+/*cuadros mascotas*/
+.EscogetucuadroFavorito {
+  margin-top: 30px;
+  text-align: center;
+  color: #0e0d0d;
+}
+
+.title2video {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.botondecompraahora {
+  bottom: 5px;
+  color: #101013;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.card-group {
+  margin-top: 70px;
+  color: #000000;
+}
+
+.imgcluna {
+  width: 330px;
+  height: 300px;
+}
+
+.titulosmadera {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgccaballo {
+  width: 330px;
+  height: 300px;
+}
+
+.titulosimgcaballo {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgcperritodimen {
+  width: 300px;
+  height: 270px;
+}
+
+.titulosperritodimen {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgctigre {
+  width: 300px;
+  height: 270px;
+}
+
+.titulostigre {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.imgckoala {
+  width: 300px;
+  height: 270px;
+}
+
+.tituloskoala {
+  font-family: 20px;
+  color: #285be9;
+}
+
+.video {
+  width: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+  content: "";
+  display: block;
+  width: 90%;
+  padding-bottom: 54.22%;
+}
+
+.classvideo {
+  justify-items: center;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+}
+
+.textofinal {
+  position: re;
+  text-align: center;
+}
+
+.cuadroideal {
+  margin: 10px;
+  text-align: center;
+  color: rgb(14, 13, 13);
+}
+
+#tituloideal {
+  margin: 35px;
+  text-align: center;
+  color: rgb(235, 28, 207);
+}
+
+/*tienda */
+.titulotienda {
+  text-align: center;
+  margin-top: 70px;
+  color: rgb(20, 19, 20);
+}
+
+.titulodetienda {
+  text-align: center;
+  margin: 1%;
+  color: #242223;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#tituloideal {
+  margin-top: 90px;
+  text-align: center;
+  color: rgb(19, 18, 19);
+  justify-content: center;
+  margin-top: 5%;
+  color: #e928cf;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.listadesple {
+  margin-top: 40px;
+  width: 32%;
+  height: 30%;
+  align-items: center;
+}
+
+#botondecomprarahora {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  border-radius: 30px;
+  width: 70%;
+  height: 15%;
+  text-align: center;
+  margin: 5%;
+  /*transicion*/
+  transition: width 3s;
+}
+
+.cardtien {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3.5em;
+  flex-wrap: wrap;
+}
+
+.card_item {
+  background-color: #e8dbee;
+  padding-bottom: 3em;
+  flex-wrap: wrap;
+  max-width: 450px;
+  flex-grow: 1;
+  flex-basis: 280px;
+}
+
+.card-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card_picture {
+  width: 70%;
+  margin: 0 auto;
+  background: #e8eaf0;
+  position: relative;
+  bottom: 2em;
+}
+
+.card_img {
+  width: 100%;
+}
+
+/*variable*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  /*Gradientes*/
+  background: rgb(194, 174, 238);
+  background: radial-gradient(circle, rgba(194, 174, 238, 0.6138830532) 28%, rgb(216, 62, 175) 91%);
+}
+
+.container-footer {
+  height: 90px;
+  text-align: center;
+}
+
+.footericen {
+  margin: 35px;
+  text-align: center;
+  color: rgb(243, 237, 242);
+}
+
+#ubicacion, #youtube, #instagram, #facebook {
+  width: 68px;
+  height: 48px;
+  float: right;
+  text-align: center;
+}
+
+/*# sourceMappingURL=css7estilos.css.map */

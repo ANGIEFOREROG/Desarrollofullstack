@@ -19,7 +19,7 @@ function cargarCarrito(){
                 tabla += '<tr><th scope="row">'+producto.id +'</th>';
                 tabla += '<td>'+producto.producto+'</td>';
                 tabla += '<td>'+producto.valor * 0.81+'</td>';
-                tabla += '<td>'+producto.valor * 0.19+'</td>';
+                tabla += '<td>'+producto.valor * 0.19+'</td>'; 
                 tabla += '<td>'+producto.cantidad+'</td>';
                 tabla += '<td>'+producto.valor * producto.cantidad+'</td>';
 

@@ -17,6 +17,7 @@ function agregarcarrito(id, nombreArticulo,valorArticulo){
                 listadoProductos.push({ id: id, producto: nombreArticulo, valor: valorArticulo, cantidad:1 });
                 localStorage.setItem('productos', JSON.stringify(listadoProductos));
             }
+            // se realiza el localStorage//
             localStorage.setItem('productos', JSON.stringify(listadoProductos));
         } else { // si existe el local storage pero no tiene productos, agrego el producto
             const  productos = [{ id: id, producto: nombreArticulo, valor: valorArticulo, cantidad:1 }];
