@@ -15,6 +15,7 @@ let caja_trasera_register = document.querySelector("caja__trasera-register");
 
 function iniciaSesion(){
     
+    
     document.getElementById('formulario__login').style.display = 'block';
     document.getElementById('formulario__register').style.display = 'none';
 
@@ -27,6 +28,54 @@ function iniciaSesion(){
     caja_trasera_login.style.opacity= "0";
 
 }
+function Entrar(){
+    const usuario = document.getElementById("correo_electronico1").value;
+    const contrasena = document.getElementById("contrasena1").value;
+    if(usuario!='' && contrasena!=''){
+        if (localStorage){ // condicion para saber si tenemos creado algo en cache
+
+            if(localStorage.getItem('usuarios') !== undefined && localStorage.getItem('usuarios')){
+                let listadousuarios = JSON.parse(localStorage.getItem("usuarios"));
+                
+                let siExiste = false;
+                let validacioncontra = false;
+                for (itemUsuario of listadousuarios) {
+                    if (itemUsuario.usuario == usuario){
+                        siExiste = true;
+                        if( itemUsuario.contrasena == contrasena){
+                            validacioncontra = true;
+                        }
+                    }
+                }
+                if (siExiste == false){
+                    alert(" El Usuario no existe"); 
+                }else{
+                    if(validacioncontra == true){
+                        alert("Bienvenido");
+                    }else{ 
+                        alert("Contraseña incorrecta");
+                        
+                    }
+                    
+                }
+                
+            } else { // si existe el local storage pero no tiene usuarios, agrego el usuario
+                alert("Usuario no Existe"); 
+            }
+        } else { // no existe el localstorage lo creo
+            
+            alert("Usuario no existe"); 
+        }
+        
+    }else{
+        alert("ingrese usuario y contraseña");
+    }
+
+}
+                
+
+// Función para guardar los datos del formulario en el LocalStorage
+// Función para guardar los datos del formulario de inicio de sesión en el LocalStorage
 
 function register(){
 
@@ -42,7 +91,46 @@ function register(){
 }
 
 function registrar(){
-    alert("Usuario registrado correctamente"); 
+    const nombreCompleto = document.getElementById("nombre_completo").value;
+    const correoElectronico = document.getElementById("correo_electronico").value;
+    const for_usuario = document.getElementById("usuario").value;
+    const for_contrasena = document.getElementById("contrasena").value;
+    if(nombreCompleto!='' && correoElectronico!=''&& usuario!='' && contrasena!=''){
+        if (localStorage){ // condicion para saber si tenemos creado algo en cache
+
+            if(localStorage.getItem('usuarios') !== undefined && localStorage.getItem('usuarios')){
+                let listadousuarios = JSON.parse(localStorage.getItem("usuarios"));
+                
+                let siExiste = false;
+                for (itemUsuario of listadousuarios) {
+                    if (itemUsuario.usuario == for_usuario){
+                        siExiste = true;
+                    }
+                }
+                if (siExiste == false){
+                    listadousuarios.push({ nombre:nombreCompleto, correo: correoElectronico, usuario:for_usuario, contrasena:for_contrasena });
+                    localStorage.setItem('usuarios', JSON.stringify(listadousuarios));
+                    alert("Usuario registrado correctamente:"); 
+                }else{
+                    alert("El usuario ya existe");
+                }
+                // se realiza el localStorage//
+                localStorage.setItem('usuarios', JSON.stringify(listadousuarios));
+            } else { // si existe el local storage pero no tiene usuarios, agrego el usuario
+                const  usuarios = [{nombre:nombreCompleto, correo: correoElectronico, usuario:for_usuario, contrasena:for_contrasena }];
+                localStorage.setItem('usuarios', JSON.stringify(usuarios));
+                alert("Usuario registrado correctamente:"); 
+            }
+        } else { // no existe el localstorage lo creo
+            const  usuarios = [{ nombre:nombreCompleto, correo: correoElectronico, usuario:for_usuario, contrasena:for_contrasena }];
+            localStorage.setItem('usuarios', JSON.stringify(usuarios));
+        alert("Usuario registrado correctamente:"); 
+        }
+    }else{ 
+        alert("Ingrese los datos solicitados");
+    }
 }
 
 
+
+    

@@ -89,16 +89,16 @@
                     
                         <form action="" class="formulario__login" id="formulario__login">
                             <h2>Iniciar Sesion</h2>
-                            <input type="text" placeholder="Correo Electronico">
-                            <input type="password" placeholder="Contraseña">
-                            <button>Entrar</button>
+                            <input type="text" id="correo_electronico1" name="correo_electronico1" placeholder="Correo Electronico" required>
+                            <input type="password" id="contrasena1" name="contrasena1" placeholder="Contraseña" required>
+                            <button id="btn_Entrar" onclick="Entrar()">Entrar</button>
                         </form>
                         <form action="" clase ="formulario__register" id="formulario__register" style="margin-left: 100%;">
                             <h2>Registrarse</h2>
-                            <input type="text" placeholder="Nombre completo">
-                            <input type="text" placeholder="Correo Electronico">
-                            <input type="text" placeholder="Usuario">
-                            <input type="password" placeholder="contraseña">
+                            <input type="text" id="nombre_completo" name="nombre_completo"placeholder="Nombre completo" required>
+                            <input type="text"id="correo_electronico" name="correo_electronico" placeholder="Correo Electronico" required>
+                            <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                            <input type="password" id="contrasena" name="contrasena" placeholder="contraseña" required>
                             <button onclick="registrar()">Registrarse</button>
                         </form>
                     
