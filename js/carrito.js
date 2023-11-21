@@ -1,3 +1,4 @@
+
 document.body.onload=function(){
 this.cargarCarrito();
 }
@@ -34,3 +35,5 @@ function cargarCarrito(){
         } 
     }
 }
+
+
