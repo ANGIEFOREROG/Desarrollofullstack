@@ -4,7 +4,8 @@ class ProductManager {
     }
 
     getProducts() {
-        return this.products;
+        // Devuelve una copia ordenada de la lista actual
+        return [...this.products].sort((a, b) => a.id - b.id);
     }
 
     addProduct(product) {
@@ -44,9 +45,43 @@ class ProductManager {
 
         return result;
     }
+
+    updateProduct(productId, updatedFields) {
+        const productIndex = this.products.findIndex((prod) => prod.id === productId);
+
+        if (productIndex === -1) {
+            return 'No existe ese producto';
+        }
+
+        // Guardar el ID antes de actualizar el producto
+        const originalId = this.products[productIndex].id;
+
+        // Actualizar solo los campos permitidos
+        const updatedProduct = { ...this.products[productIndex], ...updatedFields };
+
+        // Restaurar el ID original para asegurarse de que no se cambie
+        updatedProduct.id = originalId;
+
+        // Reemplazar el producto original con el actualizado
+        this.products[productIndex] = updatedProduct;
+
+        return 'Producto actualizado correctamente';
+    }
+
+    deleteProduct(productId) {
+        const initialLength = this.products.length;
+        this.products = this.products.filter((prod) => prod.id !== productId);
+
+        if (initialLength === this.products.length) {
+            return 'No existe ese producto';
+        }
+
+        return 'Producto eliminado correctamente';
+    }
 }
 
 const products = new ProductManager();
+
 console.log(
     products.addProduct({
         title: 'Cuadro caricaturas',
@@ -57,6 +92,7 @@ console.log(
         code: 'abc01',
     })
 );
+
 console.log(
     products.addProduct({
         title: 'Cuadro personalizado',
@@ -67,6 +103,16 @@ console.log(
         code: 'abc02',
     })
 );
+
 console.log(products.getProducts());
 console.log(products.getProductById(1));
 
+// Ejemplo de uso del método updateProduct
+console.log(products.updateProduct(1, { price: 28000, stock: 20 }));
+console.log(products.getProducts());
+console.log(products.getProductById(1));
+
+// Ejemplo de uso del método deleteProduct
+console.log(products.deleteProduct(2));
+console.log(products.getProducts());
+console.log(products.getProductById(1));
