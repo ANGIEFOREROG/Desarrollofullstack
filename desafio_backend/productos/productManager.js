@@ -1,7 +1,15 @@
 class ProductManager {
     constructor() {
         this.products = [];
+        this.path='';
     }
+    setPath(path){
+        this.path = path;
+    }
+    getPath(){
+        return this.path;
+    }
+    
 
     getProducts() {
         // Devuelve una copia ordenada de la lista actual
